@@ -11,7 +11,7 @@ describe('Basic API test', () => {
 
 describe('GET /tasks', () => {
   beforeEach(() => {
-    tasks.length = 0; // ensure clean state
+    tasks.length = 0; 
   });
 
   it('should return no tasks when tasks array is empty', async () => {
@@ -33,7 +33,7 @@ describe('GET /tasks', () => {
 
 describe('POST /tasks', () => {
   beforeEach(() => {
-    tasks.length = 0; // clean slate for POST tests
+    tasks.length = 0;
   });
 
   it('should create a task', async () => {
@@ -78,7 +78,7 @@ describe('PUT /tasks/:id', () => {
   let taskId;
 
   beforeEach(async () => {
-    tasks.length = 0; // ensure isolation
+    tasks.length = 0; 
     const postRes = await request(app)
       .post('/tasks')
       .send({ title: 'Task to update', dueDate: '2025-12-30' });
@@ -113,7 +113,7 @@ describe('DELETE /tasks/:id', () => {
   let taskId;
 
   beforeEach(async () => {
-    tasks.length = 0; // clean before delete tests
+    tasks.length = 0;
     const postRes = await request(app)
       .post('/tasks')
       .send({ title: 'Task to delete', dueDate: '2025-12-31' });
