@@ -86,7 +86,7 @@ app.delete('/tasks/:id', (req, res) => {
   }
 });
 
-module.exports = app;
+module.exports = { app, tasks };
 
 if (require.main === module) {
   const PORT = 5000;
