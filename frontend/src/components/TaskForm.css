@@ -1,0 +1,16 @@
+.task-form {
+  margin-bottom: 2rem;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"] {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.task-form button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
