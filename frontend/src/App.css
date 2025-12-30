@@ -1,16 +1,33 @@
 .app-container {
   padding: 2rem;
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  background-color: rgb(248, 235, 250);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.app-heading {
-  margin-bottom: 0.5rem;
+.main-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.app-subheading {
-  color: #666;
+.form-container {
+  flex: 1; 
+}
+
+.task-list-container {
+  flex: 2;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .filter-buttons {
@@ -19,15 +36,16 @@
 
 .filter-buttons button {
   margin-right: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-radius: 5px;
+  transition: all 0.2s;
 }
 
-.filter-buttons button.selected {
-  background-color: #007bff;
-  color: #fff;
-  border-color: #007bff;
+.filter-buttons button.selected,
+.filter-buttons button:hover {
+  background-color: rgb(170, 26, 232);
+  color: white;
 }

@@ -6,16 +6,16 @@
 .task-item {
   margin-bottom: 1rem;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .task-item.completed {
-  background-color: #e0ffe0;
+  background-color: rgb(224, 255, 224);
 }
 
 .task-title.completed {

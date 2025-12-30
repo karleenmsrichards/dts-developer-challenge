@@ -1,0 +1,13 @@
+.app-heading {
+  font-size: 2rem;     
+  font-weight: bold;
+  color: rgb(126, 8, 236);          
+  margin: 0;
+}
+s
+.app-subheading {
+  font-size: 1.1rem;   
+  color: rgb(85, 85, 85);        
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;  
+}
